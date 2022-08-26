@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Array Sreach Element </title>
+        <script>
+            // let arr =[10,20,30,40,50,60,70,80,90,100,4,3,5,6,7,8,9]
+            // let item = 3
+            // let index = undefined
+            // for (let i =0;i<arr.length;i++){
+            //     if(arr[i]===item){
+            //          index=i
+            //          break;
+            //     }
+            // }
+            // console.log(`value At ${item} Position ${index}`)
+            function searchElment(){
+
+ let arr =[10,20,30,40,50,60,70,80,90,100,4,3,5,6,7,8,9]
+            let item = document.getElementById("searchElement").value
+            let index = undefined
+            for (let i =0;i<arr.length;i++){
+                if(arr[i]==item){
+                     index=i
+                     break;
+                }
+            }
+            console.log(`value At ${item} Position ${index}`)            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="searchElement" placeholder="search Element  "/>
+        <button onclick="searchElment()">Search Element</button>
+    </body>
+</html>
